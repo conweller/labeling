@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.Selection {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.UserSelector {
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom:0.5rem;
+  padding: 0.5rem;
+}
+
+.navCount {
+  align-self: center;
+}
+
+.navHeader {
+  width:19rem;
+  text-align:left
+}
+
+#jumpToPageNumber {
+  text-align: right;
+}
+
+.navButtons button {
+  margin-left: 0.5rem;
+}
+
+.Image {
+  max-width: 90%;
+  max-height: 30rem;
+  border: 1px solid black;
+}
+
+.UserView {
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Info {
+  margin-top: 3rem;
+  text-align:left;
+  font-size: small;
+  background: #f0f0f0;
+  line-height: 1.5;
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  font-family: monospace;
+}
