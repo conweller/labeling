@@ -123,7 +123,7 @@ class UserView extends React.Component {
   }
 
   nextUnlabeled() {
-    return this.state.assignments.findIndex(a => a.label == null)
+    return Math.max(this.state.assignments.findIndex(a => a.label == null), this.state.assignments.length - 1);
   }
 
   componentDidMount() {
