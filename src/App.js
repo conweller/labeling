@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 
-const api = "http://ec2-54-164-1-37.compute-1.amazonaws.com"
+const api = "https://api.connoronweller.com"
 // const api = "http://127.0.0.1:8000"
 
 function ErrorElement(props) {
@@ -123,7 +123,12 @@ class UserView extends React.Component {
   }
 
   nextUnlabeled() {
-    return Math.max(this.state.assignments.findIndex(a => a.label == null), this.state.assignments.length - 1);
+    let next = this.state.assignments.findIndex(a => a.label == null)
+    if (next === -1) {
+      return this.state.assignments.length - 1
+    } else {
+      return next
+    }
   }
 
   componentDidMount() {
