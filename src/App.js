@@ -217,6 +217,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    document.title = "Line Chart Labeling"
     fetch(`${api}/users/`)
       .then(res => {
         if (res.status >= 400) {
